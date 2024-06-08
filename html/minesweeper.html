@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper Clone</title>
+    <script type="module" src="js/minesweeper.js"></script>
+    <link rel="stylesheet" href="css/common.css"></link>
+    <link rel="stylesheet" href="css/minesweeper.css"></link>
+</head>
+
+<body>
+    <h1>Minesweeper Clone</h1>
+
+    <p>
+    There are some mines hidden in the grid below. Try to open all the squares that aren't mines by
+    clicking them, but don't click the mines. The numberes in opened squares indicate how many of
+    the 8 squares surrounding them (aka "neighbor squares") are mines.
+    </p>
+
+    <div id="game-container">
+        <div id="game-inner-container">
+            <div id="game" class="game-area"></div>
+            <span id="game-statusbar"></span>
+        </div>
+
+        <div class="setting-box">
+            <div class="setting-inputs">
+                <label for="width-input">Width:</label>
+                <input type="number" id="width-input" min="1" value="10" required />
+                <label for="height-input">Height:</label>
+                <input type="number" id="height-input" min="1" value="10" required />
+                <label for="mine-count-input">Number of mines:</label>
+                <input type="number" id="mine-count-input" min="1" value="10" required />
+                <label for="mine-percentage-input">Mine percentage:</label>
+                <input pattern="([1-9][0-9]?|0)(\.[0-9]*)?%" id="mine-percentage-input" required />
+            </div>
+
+            <button id="new-game-button" class="new-game-button">New Game</button>
+        </div>
+    </div>
+
+    <p>
+    You can flag the squares by right-clicking. This is intended to be used so that when you know
+    that some square is a mine, you put a flag there.
+    </p>
+
+    <p>
+    If the number of an opened square is equal to the number of flagged squares around it, then any
+    of the square's non-flagged neighbor squares can't be mines, assuming that you didn't flag any
+    not-mines. In those cases, you can double click the number, and all those other squares are
+    automatically opened.
+    </p>
+
+    <p id="link2index"><a href="index.html">Back to the list of games</a></p>
+</body>
+
+</html>

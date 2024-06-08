@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spider</title>
+    <script type="module" src="js/spider.js"></script>
+    <link rel="stylesheet" href="css/common.css"></link>
+    <link rel="stylesheet" href="css/cards.css"></link>
+    <link rel="stylesheet" href="css/spider.css"></link>
+</head>
+
+<body>
+    <h1>Spider</h1>
+
+    <!-- TODO: write rules -->
+
+    <div id="game" class="game-area"></div>
+
+    <div class="setting-box">
+        <div class="setting-inputs">
+            <label for="difficulty-radios">Number of suits:</label>
+            <div id="difficulty-inputs">
+                <input type="radio" id="difficulty-easy" name="difficulty" value="1" checked />
+                <label for="difficulty-easy">1 (easy)</label>
+                <br />
+                <input type="radio" id="difficulty-medium" name="difficulty" value="2" />
+                <label for="difficulty-medium">2 (medium)</label>
+                <br />
+                <input type="radio" id="difficulty-hard" name="difficulty" value="4" />
+                <label for="difficulty-hard">4 (hard)</label>
+            </div>
+        </div>
+
+        <button id="new-game-button" class="new-game-button">New Game</button>
+    </div>
+
+    <p id="link2index"><a href="index.html">Back to the list of games</a></p>
+</body>
+
+</html>

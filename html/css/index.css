@@ -1,0 +1,31 @@
+#game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15em);
+    grid-auto-rows: 16em;
+}
+
+#game-list > a {
+    text-decoration: none; /* remove underline */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 1em;
+    padding: 0.5em;
+    background-color: rgb(0, 250, 100);
+    margin: 10px;
+}
+
+#game-list > a > h4 {
+    font-size: 1.4em;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+}
+
+#game-list > a > img {
+    flex: 1;
+    object-fit: cover;
+    max-width: 12em;
+    border-radius: 10%;
+    box-shadow: 0.3em 0.4em rgba(0, 0, 0, 0.2);
+}

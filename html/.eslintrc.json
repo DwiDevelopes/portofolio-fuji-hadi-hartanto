@@ -1,0 +1,26 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prefer-arrow-callback": ["warn", { "allowNamedFunctions": true }],
+        "semi": "warn",
+        "no-template-curly-in-string": "warn",
+        "array-callback-return": "warn",
+        "consistent-return": "warn",
+        "curly": "warn",
+        "dot-notation": "warn",
+        "eqeqeq": "warn",
+        "no-new-wrappers": "error"
+    }
+}

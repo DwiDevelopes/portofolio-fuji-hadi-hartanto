@@ -1,0 +1,23 @@
+{
+  "name": "html-games",
+  "version": "1.0.0",
+  "description": "This repository contains my implementations of classic games for web browsers. [Click here](https://akuli.github.io/html-games/) to play.",
+  "main": "there is no entry point",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akuli/html-games.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akuli/html-games/issues"
+  },
+  "homepage": "https://github.com/Akuli/html-games#readme"
+}

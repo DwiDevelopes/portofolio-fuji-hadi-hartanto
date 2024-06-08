@@ -1,0 +1,69 @@
+/* all html files use this css file */
+
+html {
+    background-color: rgb(200, 250, 200);
+    font-family: sans;
+}
+
+#link2index {
+    padding-top: 1em;
+}
+
+.setting-box {
+    border: 1px solid;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    margin-top: 10px;
+    background-color: rgb(0, 250, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.setting-inputs {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 3px;
+    margin-bottom: 10px;
+}
+
+.setting-inputs > input {
+    width: 5em;
+}
+
+.new-game-button {
+    /* TODO: more interesting background */
+    font-size: 2em;
+    margin: 0.5em;
+    align-self: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+input:invalid {
+    background-color: rgb(255, 100, 100);
+}
+
+.status-message {
+    font-size: 2em;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 8px 8px 4px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.status-message.hidden {
+    display: none;
+}
+
+.game-area {
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

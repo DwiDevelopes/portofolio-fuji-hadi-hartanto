@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wheather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input
+          type="text"
+          placeholder="Enter your location"
+          id="locationInput"
+        />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <div class="not-found">
+        <img src="images/404.jpg" />
+        <p>Oops! Invalid location 😣</p>
+      </div>
+
+      <div class="weather-box">
+        <img src="" />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/7c8801c017.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+  <script>
+    const container = document.querySelector(".container");
+const search = document.querySelector(".search-box button");
+const weatherBox = document.querySelector(".weather-box");
+const weatherDetails = document.querySelector(".weather-details");
+const error404 = document.querySelector(".not-found");
+
+const APIKey = "d3c690bedbe6acd9e748c4d4aefaa684";
+const unsplashAccessKey = "K9FKvc0c_H-uITJDwtuAs-5GkdepN9ogeZjXru45lto"; // Replace with your Unsplash API access key
+
+// Event handler untuk event click
+search.addEventListener("click", performSearch);
+
+// Event handler untuk event keypress
+document.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    performSearch();
+  }
+});
+
+function performSearch() {
+  const city = document.querySelector(".search-box input").value;
+
+  if (city === "") return;
+
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`
+  )
+    .then((response) => response.json())
+    .then((json) => {
+      if (json.cod === "404") {
+        container.style.height = "400px";
+        weatherBox.style.display = "none";
+        weatherDetails.style.display = "none";
+        error404.style.display = "block";
+        error404.classList.add("fadeIn");
+        return;
+      }
+
+      error404.style.display = "none";
+      error404.classList.remove("fadeIn");
+
+      // Retrieve background image from Unsplash
+      fetch(
+        `https://api.unsplash.com/photos/random?query=${city}&client_id=${unsplashAccessKey}`
+      )
+        .then((response) => response.json())
+        .then((unsplashJson) => {
+          const body = document.querySelector("body");
+          if (unsplashJson.urls && unsplashJson.urls.regular) {
+            body.style.backgroundImage = `url(${unsplashJson.urls.regular})`;
+          }
+
+          // Rest of your code
+          const image = document.querySelector(".weather-box img");
+          const temperature = document.querySelector(
+            ".weather-box .temperature"
+          );
+          const description = document.querySelector(
+            ".weather-box .description"
+          );
+          const humidity = document.querySelector(
+            ".weather-details .humidity span"
+          );
+          const wind = document.querySelector(".weather-details .wind span");
+
+          switch (json.weather[0].main) {
+            case "Clear":
+              image.src = "images/clear.png";
+              break;
+
+            case "Rain":
+              image.src = "images/rain.png";
+              break;
+
+            case "Snow":
+              image.src = "images/snow.png";
+              break;
+
+            case "Clouds":
+              image.src = "images/cloud.png";
+              break;
+
+            case "Haze":
+              image.src = "images/mist.png";
+              break;
+
+            default:
+              image.src = "";
+          }
+
+          temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+          description.innerHTML = `${json.weather[0].description}`;
+          humidity.innerHTML = `${json.main.humidity}%`;
+          wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+
+          weatherBox.style.display = "";
+          weatherDetails.style.display = "";
+          weatherBox.classList.add("fadeIn");
+          weatherDetails.classList.add("fadeIn");
+          container.style.height = "590px";
+        });
+    });
+}
+
+  </script>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Nilai alpha (0.5) menentukan tingkat transparansi */
+  z-index: -1;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+  width: 400px;
+  height: 105px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.6s ease-out;
+  backdrop-filter: blur(10px) saturate(150%);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-box input {
+  background: transparent;
+  color: #dff6ff;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px 0;
+  padding-left: 55px;
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+.search-box input::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #dff6ff;
+  text-transform: capitalize;
+}
+
+.search-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: black;
+  background: #dff6ff;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.4s ease;
+}
+
+.search-box button:hover {
+  color: #dfdfdf;
+  background: black;
+}
+
+.search-box i {
+  position: absolute;
+  color: #dfdfdf;
+  font-size: 28px;
+  padding-left: 20px;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box img {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.weather-box .temperature {
+  position: relative;
+  color: #dff6ff;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: -16px;
+}
+
+.weather-box .temperature span {
+  position: absolute;
+  margin-left: 4px;
+  font-size: 1.5rem;
+}
+
+.weather-box .description {
+  color: #dfdfdf;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100px;
+}
+
+.weather-details .humidity {
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.weather-details .wind {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+.weather-details i {
+  color: #dfdfdf;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+.weather-details span {
+  color: #dfdfdf;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details p {
+  color: #dfdfdf;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.not-found {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  scale: 0;
+  opacity: 0;
+  display: none;
+}
+
+.not-found img {
+  width: 80%;
+  height: 80%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.not-found p {
+  color: #dfdfdf;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 auto;
+  margin: 1rem 0;
+}
+
+.weather-box,
+.weather-details {
+  scale: 0;
+  opacity: 0;
+}
+
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+  </style>
+</html>

@@ -1,0 +1,11 @@
+.setting-box {
+    width: 18em;
+}
+
+#difficulty-inputs {
+    width: 8em;
+}
+
+.card-place.cannot-stock-to-tableau {
+    background-color: #f33;
+}

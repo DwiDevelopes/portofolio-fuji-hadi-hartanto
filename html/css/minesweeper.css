@@ -1,0 +1,75 @@
+#game-inner-container {
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+
+#game {
+    display: grid;
+    /* javascript creates the rows and columns, and they use these sizes automatically */
+    grid-auto-columns: 2em;
+    grid-auto-rows: 2em;
+
+    position: relative;   /* for the status message */
+}
+
+.status-message {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* TODO: make these less hard-coded
+    the text shouldn't be given any more space than it needs
+    centering the text instead is a workaround for that
+    */
+    height: 1em;
+    max-width: 8em;
+    text-align: center;
+}
+
+.status-message:before {
+    content: "";
+    position: absolute;
+}
+
+.setting-box {
+    float: left;
+}
+
+#game-container + * {
+    display: block;
+    clear: both;
+    margin-top: 1em;
+}
+
+.square {
+    border: 1px solid #999;
+    border-radius: 8px;
+    margin: 1px;
+    background-color: #ccc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 0.1s;
+}
+
+.square.opened {
+    background-color: #fff;
+}
+
+.square > span {
+    font-size: 1.3em;
+}
+
+.square.number0 { color: blue; }
+.square.number1 { color: green; }
+.square.number2 { color: darkgoldenrod; }
+.square.number3 { color: red; }
+.square.number4 { color: cyan; }
+.square.number5, .square.number6, .square.number7, .square.number8 { color: magenta; }
+.square.openedmine { background-color: red; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Klondike</title>
+    <script type="module" src="js/klondike.js"></script>
+    <link rel="stylesheet" href="css/common.css"></link>
+    <link rel="stylesheet" href="css/cards.css"></link>
+    <link rel="stylesheet" href="css/klondike.css"></link>
+</head>
+
+<body>
+    <h1>Klondike</h1>
+
+    <p>
+    Try to move all cards to the foundations (the 4 empty places at top right).
+    </p>
+
+    <!-- TODO: write more rules -->
+
+    <div id="game" class="game-area"></div>
+
+    <div class="setting-box">
+        <div class="setting-inputs">
+            <label for="pick-input">Cards to pick at a time:</label>
+            <!-- there are 13*4 cards and 1+2+3+4+5+6+7 of them are never pickable
+                 13*4 - (1+2+3+4+5+6+7) = 24
+                 -->
+            <input type="number" id="pick-input" min="1" max="24" value="3" required />
+        </div>
+        <button id="new-game-button" class="new-game-button">New Game</button>
+    </div>
+
+    <p>
+    You can move a card to any of the foundations by clicking the card with the
+    wheel of the mouse (yes, you can click with that wheel; just press it down
+    instead of rolling it). If you wheel-click an area of the game that is not
+    a card, then <strong>any</strong> cards in the game that can be moved to a
+    foundation will be moved there.
+    </p>
+
+    <p id="link2index"><a href="index.html">Back to the list of games</a></p>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+#game {
+    min-height: 25em;   /* javascript sets height, but that can't make it smaller than this */
+    background-color: #0a0;
+    position: relative;
+    transition-property: height;
+    transition-duration: 0.5s;
+}
+
+.status-message {
+    /* TODO: figure out how to make it stretch to the text size instead */
+    width: 10em;
+    text-align: center;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0px);
+
+    /* cards use about 100 and a little more, this puts it above them */
+    z-index: 200;
+}
+
+.card, .card-place {
+    /* card size is defined in the javascript because it's much easier that way imo */
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.card-place {
+    background-color: #090;
+    border: 2px solid #080;
+
+    /* make sure that these things get "hidden" behind the cards
+       without this, it looks ok on chromium but not on firefox */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.card {
+    background-color: #77e;
+    border: 1px solid #333;
+    transition-property: background-color, left, top, z-index;
+    transition-duration: 0.2s;
+}
+.card.visible {
+    background-color: whitesmoke;
+}
+.card.dragging {
+    transition-property: none;
+}
+.card.ready2drop {
+    border: 5px solid blue;
+}
+
+.card > div {
+    display: flex;
+    position: absolute;
+    margin: 3px;
+    font-size: 1.3em;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;   /* hides everything unless .visible rules override */
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.card.visible > div {
+    opacity: 1;
+}
+
+.card div:nth-of-type(2) {
+    right: 0px;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+.card.black.visible > div { color: black; }
+.card.red.visible > div { color: red; }

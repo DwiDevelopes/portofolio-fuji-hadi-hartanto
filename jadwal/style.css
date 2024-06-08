@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --body-color: #040315;
+    --main-color: #07480D;
+    --secondary-color: #FFE500;
+    --gradation-color: #FFA800;
+
+    --main-font: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('masjid.jpg');
+    background-position-y: 50%;
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.roof-container {
+    display: grid;
+    place-items: center;
+}
+
+.lamp-1 {
+    position: absolute;
+    top: 2.5%;
+    left: 0px;
+    animation: muncul 1s linear;
+}
+
+.lamp-2 {
+    position: absolute;
+    top: 2.5%;
+    right: 0px;
+    animation: muncul 1s linear;
+}
+
+@keyframes muncul {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.moon {
+    margin-bottom: -3%;
+    margin-top: 10%;
+    z-index: 5000;
+}
+
+.stick {
+    width: 5px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+}
+
+.box-top {
+    width: 30%;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 100% 100%  0 0;
+    outline: none;
+    border: none;
+}
+
+.box-mid {
+    
+    width: 55%;
+    height: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
+.text-end {
+    background-color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+    padding-right: 20px;
+    width: fit-content;
+    margin-left: 5%;
+}
+
+.card {
+    background-color: var(--main-color);
+    padding-top: 5%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+.input-group {
+    margin-top: 3%;
+}
+
+.input-group > input {
+    margin-inline: 5%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.table {
+    border-radius: 20px;
+}
+
+.list-group-item {
+    font-weight: 600;
+}
+
+.text-date {
+    background-color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: fit-content;
+    margin-left: 5%;
+    margin-bottom: 8%;
+    margin-top: 3%;
+}
+
+.card-list {
+    margin-inline: 2%;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.card-list > .list-group-item-action {
+    border-radius: 20px;
+    margin-top: 1%;
+}
+
+.card-list > .list-group-item-action:hover {
+    outline: 3px solid var(--gradation-color);
+}
+
+.hidden-list {
+    display: none;
+}
+
+/* Responsive Design */
+
+@media (min-width: 576px) {
+    .moon {
+        margin-bottom: -2%;
+    }
+
+    .card-body {
+        margin-inline: 2%;
+    }
+
+    .text-date {
+        margin-left: 63%;
+    }
+}
+
+@media (min-width: 768px) {
+    .moon {
+        margin-bottom: -1%;
+    }
+
+    .card-body {
+        margin-inline: 3%;
+    }
+
+    .text-date {
+        margin-left: 71.5%;
+    }
+}
+
+@media (min-width: 992px) {
+    .moon {
+        margin-bottom: -0.8%;
+    }
+
+    .text-date {
+        margin-bottom: 6%;
+        margin-left: 81%;
+    }
+
+    .card-body {
+        margin-inline: 3.5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .moon {
+        margin-bottom: -0.5%;
+    }
+
+    .text-date {
+        margin-bottom: 4%;
+        margin-left: 83%;
+    }
+}
