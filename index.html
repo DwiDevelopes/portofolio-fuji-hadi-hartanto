@@ -39,60 +39,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
 <body>
-  <div class="kontekk">
-<a href="https://wa.me/+62 812-2236-2344?text=I want%20To ask%20in%20for%20help%20me%20plise?"><img src="kontek.png"width="120"height="120"></a>
-  </div>
-    <h2 class="playing"><span class="song-name"></span></h2>
-    <div class="controls">
-      <button class="btn previous"><i class='bx bx-skip-previous'></i></button>
-      <button class="btn play-pause">
-        <i id="bx bx-pause" class="bx bxl-play-store"></i>
-      </button>
-      <button class="btn next"><i class='bx bx-skip-next' ></i></button>
-    </div>
-  <style>
-    .kontekk{
-      position: fixed;
-      top: 80%;
-      z-index: 1000;
-      left: 70%;
-    }
-  </style>
-  <style>
-
-.btn {
-
-  background-color: transparent;
-  color: white;
-  font-size: 30px;
-  border: none;
-  cursor: pointer;
-}
-
-.controls {
-  display: flex;
-       position: fixed;
-      top: 85%;
-      z-index: 2000;
-      right: 50%;
-}
-
-.btn:hover {
-  color: crimson;
-}
-
-.playing {
-  text-align: center;
-    display: flex;
-       position: fixed;
-      top: 80%;
-      z-index: 2000;
-      right: 50%;
-      background:#444;
-}
-  </style>
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
@@ -121,81 +68,8 @@
         <a href="https://www.instagram.com/fuji_h_h?igsh=dXo4bmhwamh0NGl6" class="instagram"><i class="bi bi-instagram"></i></a>
         <a href="https://t.me/@fujihadi1997" class="linkedin"><i class="bi bi-telegram"></i></a>
       </div>
-          <script>
-
-const roy2 = new Audio('arabic.mp3');
-
-const carles2 = new Audio('arabic2.mp3');
-const Fuji2 = new Audio('arabic3.mp3');
-const rara2 = new Audio('arabic4.mp3');
-
-// selecting elements
-const prevBtn = document.querySelector('.previous');
-const playBtn = document.querySelector('.play-pause');
-const nextBtn = document.querySelector('.next');
-const songName = document.querySelector('.song-name');
-const playPauseIcon = document.querySelector('#play-pause-icon');
 
 
-const songs = [
-  { ele: roy2, audioName: 'Arabic Relax' },
-  { ele: carles2, audioName: 'Arabic Battle' },
-    { ele: Fuji2, audioName: 'Arabic Epic' },
-        { ele: rara2, audioName: 'Eygpt Acient' },
-];
-
-for(const song of songs) {
-  song.ele.addEventListener('ended', ()=> {
-    updateSong('.next');
-    playPauseSong();
-  })
-}
-
-let current = 0;
-let currentSong = songs[current].ele;
-songName.textContent = songs[current].audioName;
-
-playBtn.addEventListener('click',()=> {
-  playPauseSong();
-})
-
-nextBtn.addEventListener('click', () => {
-  updateSong('.next');
-  playPauseSong();
-});
-
-prevBtn.addEventListener('click', () => {
-  updateSong('.prev');
-  playPauseSong();
-});
-
-const updateSong = (action)=> {
-  currentSong.pause();
-  currentSong.currentTime = 0;
-
-  if(action === '.next'){
-    current++;
-    if(current > songs.length -1) current = 0;
-  }
-  if(action === '.prev'){
-    current--;
-    if(current < 0) current = songs.length - 1;
-  }
-  currentSong = songs[current].ele;
-  songName.textContent = songs[current].audioName;
-}
-
-const playPauseSong = ()=> {
-  if(currentSong.paused){
-    currentSong.play();
-    playPauseIcon.className = 'bx bx-pause';
-  }
-  else {
-    currentSong.pause();
-    playPauseIcon.className = 'bx bxl-play-store';
-  }
-}
-  </script>
   </header><!-- End Header -->
 
   <!-- ======= About Section ======= -->
