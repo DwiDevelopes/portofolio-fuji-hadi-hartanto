@@ -292,7 +292,7 @@ dt, dd {
     .maps button:hover::after {
         content: "";
         position: absolute;
-        top -1px;
+        top: -1px;
         left: 14px;
         width: 0;
         height: 0;
@@ -745,3 +745,31 @@ h2 {
 .menuButton:hover {
     background: linear-gradient(to bottom, rgb(204, 202, 202), rgb(134, 132, 130));
 }
+/*--------------------------------------------------------------
+# webkit scrollbar
+--------------------------------------------------------------*/
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson;
+    display: none;
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: crimson;
+    display: none;
+  } 
+  

@@ -9,3 +9,31 @@
 .card-place.cannot-stock-to-tableau {
     background-color: #f33;
 }
+/*--------------------------------------------------------------
+# webkit scrollbar
+--------------------------------------------------------------*/
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson;
+    display: none;
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: crimson;
+    display: none;
+  } 
+  

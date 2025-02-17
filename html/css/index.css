@@ -12,7 +12,7 @@
     border: 1px solid;
     border-radius: 1em;
     padding: 0.5em;
-    background-color: rgb(0, 250, 100);
+    background-color: rgb(0, 0, 0);
     margin: 10px;
 }
 
@@ -29,3 +29,31 @@
     border-radius: 10%;
     box-shadow: 0.3em 0.4em rgba(0, 0, 0, 0.2);
 }
+/*--------------------------------------------------------------
+# webkit scrollbar
+--------------------------------------------------------------*/
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson;
+    display: none;
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: crimson;
+    display: none;
+  } 
+  

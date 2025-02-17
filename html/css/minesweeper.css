@@ -73,3 +73,31 @@
 .square.number4 { color: cyan; }
 .square.number5, .square.number6, .square.number7, .square.number8 { color: magenta; }
 .square.openedmine { background-color: red; }
+/*--------------------------------------------------------------
+# webkit scrollbar
+--------------------------------------------------------------*/
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson;
+    display: none;
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: crimson;
+    display: none;
+  } 
+  

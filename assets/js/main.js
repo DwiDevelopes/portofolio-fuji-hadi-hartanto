@@ -252,3 +252,71 @@
   new PureCounter();
 
 })()
+
+  /**
+   * Testimonial mobile
+   */
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.testimonials-carousel', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    on: {
+      slideChange: function () {
+        const activeSlide = this.slides[this.activeIndex];
+        const img = activeSlide.querySelector('.testimonial-img');
+        img.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+          img.style.transform = 'scale(1)';
+        }, 300); // Kembali ke ukuran normal setelah 300ms
+      },
+    },
+  });
+});
+
+  /**
+   * Testimonial mobile
+   */
+  document.addEventListener('DOMContentLoaded', function () {
+    // Menunggu hingga seluruh halaman selesai dimuat
+    window.addEventListener('load', function () {
+      // Menghilangkan preloader setelah halaman selesai dimuat
+      const preloader = document.querySelector('.preloader');
+      if (preloader) {
+        preloader.style.opacity = '0'; // Mengurangi opacity secara halus
+        setTimeout(() => {
+          preloader.style.display = 'none'; // Menghilangkan preloader dari DOM
+        }, 500); // Waktu delay sebelum preloader dihilangkan (500ms)
+      }
+    });
+  });
+// menonaktifkan devtols
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault(); // Mencegah menu klik kanan
+
+});
+document.addEventListener("keydown", function(e) {
+  if (e.keyCode == 123) { // F12 key
+      e.preventDefault();
+      alert("F12 tidak bisa digunakan.");
+  }
+});
+document.onkeydown = function(e) {
+  if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { // Ctrl+Shift+I
+      e.preventDefault();
+  }
+  if (e.keyCode == 123) { // F12
+      e.preventDefault();
+  }
+};
+(function() {
+  let devtools = /./;
+  devtools.toString = function() {
+  };
+  console.log('%c', devtools);
+})();

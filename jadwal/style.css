@@ -1,44 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
     --body-color: #040315;
-    --main-color: #07480D;
-    --secondary-color: #FFE500;
-    --gradation-color: #FFA800;
-
-    --main-font: 'Poppins', sans-serif;
+    --main-color: #021604; /* Hijau tua */
+    --secondary-color: #FFE500; /* Kuning */
+    --gradation-color: #FFA800; /* Oranye */
+    --accent-color: #6C63FF; /* Ungu modern */
+    --text-color: #000000; /* Putih untuk teks */
+    --background-gradient: linear-gradient(135deg, #040315, #1A1A2E); /* Gradien gelap */
+    --card-background: rgba(255, 255, 255, 0.1); /* Latar belakang card transparan */
+    --border-radius: 15px; /* Border radius konsisten */
 }
 
 body {
-    background: url('masjid.jpg');
-    background-position-y: 50%;
+    background: var(--background-gradient);
+    background-attachment: fixed;
+    color: var(--text-color);
     font-family: var(--main-font);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+    line-height: 1.6;
+    padding: 20px;
 }
 
 .roof-container {
     display: grid;
     place-items: center;
+    padding: 20px;
 }
 
-.lamp-1 {
-    position: absolute;
-    top: 2.5%;
-    left: 0px;
-    animation: muncul 1s linear;
+.card {
+    background: var(--card-background);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.lamp-2 {
-    position: absolute;
-    top: 2.5%;
-    right: 0px;
-    animation: muncul 1s linear;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-group > input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    transition: border-color 0.3s ease;
+}
+
+.input-group > input:focus {
+    border-color: var(--accent-color);
+    outline: none;
 }
 
 @keyframes muncul {
@@ -51,6 +65,76 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+@media (max-width: 768px) {
+    .moon {
+        margin-bottom: -5%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .text-date {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .input-group > input {
+        width: 100%;
+        margin-inline: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .moon {
+        margin-bottom: -10%;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .text-end, .text-date {
+        font-size: 0.9rem;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.text-end, .text-date {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.lamp-1, .lamp-2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card-list > .list-group-item-action {
+    transition: all 0.3s ease;
+}
+
+.card-list > .list-group-item-action:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
 }
 
 .moon {
@@ -215,3 +299,31 @@ body {
         margin-left: 83%;
     }
 }
+/*--------------------------------------------------------------
+# webkit scrollbar
+--------------------------------------------------------------*/
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    display: none;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson;
+    display: none;
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: crimson;
+    display: none;
+  } 
+  
