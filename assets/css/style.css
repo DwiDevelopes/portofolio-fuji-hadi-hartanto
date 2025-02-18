@@ -1682,11 +1682,6 @@ video {
 }
 
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
 .col-lg-4, .col-md-6 {
   flex: 1 1 calc(33.333% - 20px);
@@ -1729,6 +1724,9 @@ video {
   .col-lg-4, .col-md-6 {
     flex: 1 1 calc(50% - 20px);
     max-width: calc(50% - 20px);
+  }
+  .row {
+    gap: 20px;
   }
 }
 
