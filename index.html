@@ -24,6 +24,7 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
   <div class="preloader"></div>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -53,7 +54,17 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I am someone who has enthusiasm and is a hardworking, disciplined person who is easy to get along with.
-        <span>Travel</span> from Indonesia</h2>
+        <span id="simpleUsage"></span> From Indonesia</h2>
+        <script>
+          new TypeIt("#simpleUsage", {
+            strings: ["Tour Leader"],
+            color : "red",
+            typeSpeed : 1,
+            backSpeed : 1,
+            loop: true,
+            waitUntilVisible: true,
+          }).go();
+        </script>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link active" href="#header">Home</a></li>
@@ -257,6 +268,13 @@
               </div>
             </div>
           </div>
+          <div class="progress">
+            <span class="skill">Tour Leader <i class="val">98%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
 
         </div>
 
@@ -342,7 +360,8 @@
                 Very skilled in traveling for Umrah and Hajj pilgrims.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/ghufran travel imani.png" width="120" height="120" class="testimonial-img" alt="">
+              <a href = "https://www.ghufrantravel.com/" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/ghufran travel imani.png" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>PT.Ghufran Travel</h3>
               <h4>Travel &amp; Hard Skils</h4>
             </div>
@@ -356,7 +375,8 @@
                 language.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/islamic of madinah.jpg" width="120" height="120" class="testimonial-img" alt="">
+              <a href = "https://iu.edu.sa/en-us" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/islamic of madinah.jpg" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>Islamic of Madinah</h3>
               <h4>Campus</h4>
             </div>
@@ -369,7 +389,8 @@
                 good at law enforcement and adept at making decisions
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/madinah hukum.jpg" width="120" height="120" class="testimonial-img" alt="">
+              <a href="https://iu.edu.sa/en-us" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/madinah hukum.jpg" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>Medina law</h3>
               <h4>Law Skils Islamic</h4>
             </div>
@@ -382,7 +403,8 @@
                 good at guiding and educating Saudi Arabian participants and even leading them to be ready for work.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/teacher lenguage arabic.jpg" width="120" height="120" class="testimonial-img" alt="">
+              <a href = "https://iu.edu.sa/en-us" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/teacher lenguage arabic.jpg" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>Teacher Language Arabic</h3>
               <h4>Teacher Arab Saudi</h4>
             </div>
@@ -395,7 +417,8 @@
                 very skilled and alert in solving all problems and very good at making decisions.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/stdii university.png" width="120" height="120" class="testimonial-img" alt="">
+              <a href = "https://stdiis.ac.id/" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/stdii university.png" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>STDII University</h3>
               <h4>Campus</h4>
             </div>
@@ -409,7 +432,8 @@
                 spirit of loving work
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/al ukhuwah.png" width="120" height="120" class="testimonial-img" alt="">
+              <a href = "https://alukhuwah.com/" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/al ukhuwah.png" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>AL-UKHUWAH</h3>
               <h4>Senior Hight School</h4>
             </div>
@@ -422,7 +446,8 @@
                 mastering reading and even guiding, educating new students to become Qur'an tahfiz
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
-              <img src="Job Skils/teacher tahfiz.jpg" width="120" height="120" class="testimonial-img" alt="">
+              <a href = "https://stdiis.ac.id/" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              class="portfolio-details-lightbox" title="Portfolio Details"><img src="Job Skils/teacher tahfiz.jpg" width="120" height="120" class="testimonial-img" alt=""></a>
               <h3>Teacher Tahfiz</h3>
               <h4>Senior</h4>
             </div>
@@ -696,6 +721,8 @@
             <li data-filter=".filter-photo">Photograpy Fuji Hadi</li>
             <li data-filter=".filter-pt">PT GHUFRAN TRAVEL IMANI</li>
             <li data-filter=".filter-pt2">VIDEO PT GHUFRAN TRAVEL</li>
+            <li data-filter=".filter-tourleader">TOUR LEADER PT GHUFRAN TRAVEL</li>
+            <li data-filter=".filter-tourleader2">VIDEO TOUR LEADER PT GHUFRAN TRAVEL</li>
           </ul>
         </div>
       </div>
@@ -2541,6 +2568,351 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (1).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (1).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (1).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (2).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (2).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (2).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (3).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (3).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (3).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (4).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (4).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (4).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (5).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (5).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (5).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (6).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (6).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (6).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (7).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (7).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (7).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (8).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (8).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (8).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (9).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (9).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (9).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (10).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (10).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (10).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (11).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (11).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (11).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (12).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (12).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (12).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (13).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (13).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (13).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (14).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (14).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (14).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader2">
+          <div class="portfolio-wrap">
+            <video autoplay loop muted class="img-fluid">
+              <source src="Tour Leader (Video)/1 (15).mp4" type="video/mp4">
+            </video>
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader (Video)/1 (15).mp4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="Tour Leader (Video)/1 (15).mp4" download=""><i class="bx bx-download"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
+                <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-6 portfolio-item filter-pt2">
           <div class="portfolio-wrap">
             <video autoplay loop muted class="img-fluid">
@@ -2570,7 +2942,7 @@
               <source src="Ghufran Travel/2.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2593,7 +2965,7 @@
               <source src="Ghufran Travel/3.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2616,7 +2988,7 @@
               <source src="Ghufran Travel/4.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2639,7 +3011,7 @@
               <source src="Ghufran Travel/5.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2662,7 +3034,7 @@
               <source src="Ghufran Travel/6.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2685,7 +3057,7 @@
               <source src="Ghufran Travel/7.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2708,7 +3080,7 @@
               <source src="Ghufran Travel/8.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2731,7 +3103,7 @@
               <source src="Ghufran Travel/9.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2754,7 +3126,7 @@
               <source src="Ghufran Travel/10.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2777,7 +3149,7 @@
               <source src="Ghufran Travel/11.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2800,7 +3172,7 @@
               <source src="Ghufran Travel/12.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2823,7 +3195,7 @@
               <source src="Ghufran Travel/13.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2846,7 +3218,7 @@
               <source src="Ghufran Travel/14.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2869,7 +3241,7 @@
               <source src="Ghufran Travel/15.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2892,7 +3264,7 @@
               <source src="Ghufran Travel/16.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2915,7 +3287,7 @@
               <source src="Ghufran Travel/17.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2938,7 +3310,7 @@
               <source src="Ghufran Travel/18.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2961,7 +3333,7 @@
               <source src="Ghufran Travel/19.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -2984,7 +3356,7 @@
               <source src="Ghufran Travel/20.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3007,7 +3379,7 @@
               <source src="Ghufran Travel/21.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3030,7 +3402,7 @@
               <source src="Ghufran Travel/22.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3053,7 +3425,7 @@
               <source src="Ghufran Travel/23.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3076,7 +3448,7 @@
               <source src="Ghufran Travel/24.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3099,7 +3471,7 @@
               <source src="Ghufran Travel/25.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3122,7 +3494,7 @@
               <source src="Ghufran Travel/26.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3145,7 +3517,7 @@
               <source src="Ghufran Travel/27.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3168,7 +3540,7 @@
               <source src="Ghufran Travel/28.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3191,7 +3563,7 @@
               <source src="Ghufran Travel/29.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3214,7 +3586,7 @@
               <source src="Ghufran Travel/30.mp4" type="video/mp4">
             </video>
             <div class="portfolio-info">
-              <h4>Photograpy Fuji Hadi</h4>
+              <h4>Tour Leader</h4>
               <p>Ghufran Travel Imani</p>
               <p> 🇮🇩</p>
               <div class="portfolio-links">
@@ -3227,6 +3599,420 @@
                   class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-info-circle'></i></a>
                 <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                   class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (1).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (1).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (1).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (2).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (2).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (2).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (3).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (3).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (3).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (4).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (4).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (4).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (5).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (5).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (5).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (6).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (6).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (6).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (7).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (7).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (7).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (8).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (8).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (8).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (9).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (9).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (9).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (10).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (10).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (10).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (11).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (11).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (11).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (12).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (12).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (12).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (13).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (13).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (13).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (14).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (14).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (14).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (15).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (15).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (15).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (16).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (16).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (16).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (17).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (17).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (17).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tourleader">
+          <div class="portfolio-wrap">
+            <img src="Tour Leader/1 (18).jpeg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Tour Leader</h4>
+              <p>Ghufran Travel Imani</p>
+              <p> 🇮🇩</p>
+              <div class="portfolio-links">
+                <a href="Tour Leader/1 (18).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="PT.Ghufran Travel Imani"><i class="bx bx-plus"></i></a>
+                <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                  class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i>
+                  <a href="Tour Leader/1 (18).jpeg" download=""><i class="bx bx-download"></i>
+                    <a href="ghufran.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                      class="portfolio-details-lightbox" title="Portfolio Details"><i
+                        class='bx bxs-info-circle'></i></i>
+                      <a href="video4.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                        class="portfolio-details-lightbox" title="Portfolio Details"><i class='bx bxs-videos'></i></i>
+                      </a>
               </div>
             </div>
           </div>
