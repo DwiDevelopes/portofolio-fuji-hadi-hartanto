@@ -20,7 +20,7 @@ Saya adalah Fuji Hadi Hartanto, seorang profesional dengan latar belakang pendid
 * Motivator
 * Problem Solving
 * Decision Making
-* Microsoft Office([fuji-hadi-hartanto-travel-agency.vercel.app][1], [Putusan Mahkamah Agung][2])
+* Microsoft Office
 
 ### 🌍 Bahasa
 
@@ -28,14 +28,14 @@ Saya adalah Fuji Hadi Hartanto, seorang profesional dengan latar belakang pendid
 * Jawa (aktif)
 * Sunda (aktif)
 * Indonesia (aktif)
-* Inggris (pasif)([GitHub][3], [Scribd][4])
+* Inggris (pasif)
 
 ### 💼 Pengalaman Kerja
 
 * Guru Tahfiz dan Bahasa Arab
 * Kementerian Agama di Arab Saudi (2 bulan)
-* Ghufran Travel (pengalaman dalam perjalanan Umrah dan Haji)([fuji-hadi-hartanto-travel-agency.vercel.app][1])
-
+* Ghufran Travel pengalaman dalam perjalanan Umrah dan Haji
+  
 ### 🎯 Visi dan Misi
 
 Saya percaya bahwa pencapaian bukanlah hasil dari apa yang kita lakukan, melainkan berasal dari kerja keras dan usaha tanpa mengharapkan imbalan. Saya meyakini bahwa siapa pun, termasuk mereka yang kurang mampu, dapat meraih impian mereka selama mereka memiliki ide dan bekerja keras tanpa mengharapkan imbalan. Saya selalu mengingatkan untuk tidak pernah menyerah dan terus berjuang meskipun hidup penuh tantangan.
