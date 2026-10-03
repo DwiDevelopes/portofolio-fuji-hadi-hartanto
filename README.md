@@ -1,3 +1,9 @@
+
+## 👥 Contributors
+
+| [<img src="https://github.com/DwiDevelopes.png" width="100px;"/><br /><sub><b>DwiDevelopes</b></sub>](https://github.com/DwiDevelopes) | [<img src="https://github.com/kkoons075-png.png" width="100px;"/><br /><sub><b>kkoons075-png</b></sub>](https://github.com/kkoons075-png) | [<img src="https://github.com/codingvibe493.png" width="100px;"/><br /><sub><b>codingvibe493</b></sub>](https://github.com/codingvibe493) |
+| :---: | :---: | :---: |
+
 Fuji Hadi Hartanto adalah seorang profesional yang berdedikasi dalam bidang pendidikan dan pelayanan ibadah, khususnya dalam penyelenggaraan perjalanan Umrah dan Haji. Beliau merupakan lulusan Fakultas Syariah di Universitas Madinah, Arab Saudi, dan juga pernah menempuh pendidikan di STDII Jember serta MA Al-Ukhuwah Sukoharjo. Dengan kemampuan berbahasa Arab Saudi, Jawa, Sunda, Indonesia, dan pemahaman pasif terhadap bahasa Inggris, Fuji memiliki keahlian dalam komunikasi lintas budaya. Pengalaman kerjanya mencakup peran sebagai guru tahfiz, pengajar bahasa Arab, serta keterlibatannya dalam Kementerian Agama di Arab Saudi selama dua bulan. Selain itu, beliau juga pernah bekerja di Ghufran Travel, yang memperkuat pengalamannya dalam industri perjalanan ibadah. ([fuji-hadi-hartanto-travel-agency.vercel.app][1])
 
 ---
